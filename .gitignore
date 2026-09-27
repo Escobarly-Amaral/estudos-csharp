@@ -1,3 +1,5 @@
 .obsidian/
 .vs/
 TaskNotes/
+bin/
+obj/

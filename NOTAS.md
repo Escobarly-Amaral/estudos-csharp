@@ -9,7 +9,7 @@ Este arquivo é um diário de bordo para acompanhar a evolução nos estudos da 
 | Tema / Exercício | Arquivo | Repetições | Conceitos Praticados |
 | :--- | :--- | :---: | :--- |
 | **POO Básica** | [`poo/01_classe_pessoa_basica.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/poo/01_classe_pessoa_basica.cs) | **10** | Criação de classes, objetos, atributos e métodos. |
-| **Delegates** | [`delegates/01_uso_delegates.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/delegates/01_uso_delegates.cs) | **6** | Multicast Delegates e associação de métodos estáticos. |
+| **Delegates** | [`delegates/01_uso_delegates.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/delegates/01_uso_delegates.cs) | **7** | Multicast Delegates e associação de métodos estáticos. |
 | **Dictionaries** | [`colecoes/02_cadastro_alunos_dictionary.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/colecoes/02_cadastro_alunos_dictionary.cs) | **4** | Coleções aninhadas, acesso por chave e CRUD. |
 | **Parâmetros Ref** | [`metodos/01_parametros_valor_ref.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/metodos/01_parametros_valor_ref.cs) | **2** | Passagem de parâmetros por valor vs. por referência (`ref`). |
 | **Sobrecarga** | [`metodos/02_sobrecarga_metodos.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/metodos/02_sobrecarga_metodos.cs) | **2** | Method overloading (mesmo nome, parâmetros diferentes). |
@@ -17,7 +17,7 @@ Este arquivo é um diário de bordo para acompanhar a evolução nos estudos da 
 | **Arrays & Condicionais** | [`arrays/01_maior_numero_array.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/arrays/01_maior_numero_array.cs) | Praticado | Busca de maior valor em arrays com laço `for`. |
 | **Arrays & Strings** | [`arrays/02_filtrar_nomes_array.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/arrays/02_filtrar_nomes_array.cs) | Praticado | Iteração com `foreach` e verificação de `Length`. |
 | **Lista de Compras** | [`colecoes/01_lista_compras_procedural.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/colecoes/01_lista_compras_procedural.cs) | Praticado | `List<string>`, menu interativo e estrutura `switch`. |
-| **Número Secreto 1P** | [`projetos/01_numero_secreto_1p/Program.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/projetos/01_numero_secreto_1p/Program.cs) | Praticado | `Random`, `while`, `int.TryParse` e controle de fluxo (`goto`). |
+| **Número Secreto 1P** | [`projetos/01_numero_secreto_1p/Program.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/projetos/01_numero_secreto_1p/Program.cs) | **2** | `Random`, `while`, `int.TryParse` e controle de fluxo (`goto`). |
 | **Jokenpô** | [`projetos/02_jokenpo/Program.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/projetos/02_jokenpo/Program.cs) | Praticado | Loops do-while aninhados e condicionais complexas. |
 | **Número Secreto 2P** | [`projetos/03_numero_secreto_2p/Program.cs`](file:///c:/Users/escob/OneDrive/Desktop/Dev/Linguagens/C%23/projetos/03_numero_secreto_2p/Program.cs) | Praticado | Entrada de 2 jogadores, validação e `Console.Clear()`. |
 
