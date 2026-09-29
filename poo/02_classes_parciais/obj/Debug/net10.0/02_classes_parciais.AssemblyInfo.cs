@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("02_classes_parciais")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+062922afe033abb75e0a53865ee5f91e07bd5251")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5a209625b67037880cd7679b848ba4ea97ee5ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("02_classes_parciais")]
 [assembly: System.Reflection.AssemblyTitleAttribute("02_classes_parciais")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
