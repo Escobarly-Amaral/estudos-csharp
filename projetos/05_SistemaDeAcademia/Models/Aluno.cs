@@ -2,104 +2,105 @@ namespace AcademiaSystem.Models;
 
 internal class Aluno
 {
-
+    // Campos
+    private string _matricula;
+    public const int idadeMinima = 12;
     // Propriedades
-    public string Nome { get; set
+    public string Nome
+    {
+        get;
+        set
         {
-            if (!string.IsNullOrWhiteSpace(value))
+            if (!string.IsNullOrWhiteSpace(value) && value.Length >= 4)
             {
                 field = value;
             }
         }
     }
-    public int Idade { get; set
+    public int Idade
+    {
+        get;
+        set
         {
-            if (value >= idadeMinima)
+          if(value >= idadeMinima)
             {
                 field = value;
-            }
+            }  
         }
     }
-    public float Peso { get;
+    public float Altura
+    {
+        get;
+        set
+        {
+           if(value > 0)
+            {
+                field = value;
+            } 
+        }
+    }
+
+    public float Peso
+    {
+        get;
         set
         {
             if(value > 0)
             {
                 field = value;
             }
-        }    
-    }
-    public float Altura { get; set
-        {
-            if (value > 0)
-            {
-                field = value;
-            }   
         }
     }
     public string Matricula
     {
-        get { return _matricula; }
-        private set { _matricula = $"{Nome}_{Idade}"; }
+        get
+        {
+            return _matricula;
+        }
+        private set
+        {
+            if(string.IsNullOrWhiteSpace(_matricula)) _matricula = $"{Nome}_{Idade}";
+        }
     }
-
-    // Campos
-    private string _matricula;
-    private int idadeMinima = 12;
-
+    public float Imc
+    {
+        get;
+        private set;
+    }
     // Métodos
+    private void CalcularImc()
+    {
+        if (Altura > 0 && Peso > 0)
+        {
+            Imc = Peso / (Altura * Altura);
+        }
+    }
     public void ExibirDados()
     {
+        Console.WriteLine("Matricula: " + Matricula);
         Console.WriteLine("Nome: " + Nome);
         Console.WriteLine("Idade: " + Idade);
-        Console.WriteLine("Peso: " + Peso);
         Console.WriteLine("Altura: " + Altura);
-        Console.WriteLine("IMC: " + CalcularIMC());
-        Console.WriteLine("Matricula: " + Matricula);
+        Console.WriteLine("Peso: " + Peso);
+        Console.WriteLine("IMC: " + Imc + "\n");
     }
-
-    public float CalcularIMC(){
-        if(Altura > 0) {
-           return Peso / (float) Math.Pow(Altura, 2);
-        }
-
-        return 0;
-    }
-    public float AdicionarPeso(float value) => Peso += value;
-    public float RemoverPeso(float value) => Peso -= value;
-    public float AdicionarAltura(float value) => Altura += value;
-    public float RemoverAltura(float value) => Altura -= value;
-    public int AdicionarIdade(int value) => Idade += value;
-    public int RemoverIdade(int value) => Idade -= value;
-
+    public float AumentarPeso(float value) => Peso += value;
+    public float DiminuirPeso(float value) => Peso -= value;
+    public float AumentarAltura(float value) => Altura += value;
+    public float DiminuirAltura(float value) => Altura -= value;
+    public int AumentarIdade(int value) => Idade += value;
+    public int DiminuirIdade(int value) => Idade -= value;
     // Construtores
-    public Aluno(string Nome, int Idade, float Peso, float Altura)
-    {
+    public Aluno(string Nome, int Idade, float Peso, float Altura){
         this.Nome = Nome;
         this.Idade = Idade;
-        this.Peso = Peso;
         this.Altura = Altura;
-        Matricula = "gerar";
-    }
-
-    public Aluno(string Nome, int Idade, float Peso)
-    {
-        this.Nome = Nome;
-        this.Idade = Idade;
         this.Peso = Peso;
-        Matricula = "gerar";
+        this.Matricula = "gerar";
+        CalcularImc();
     }
-
-    public Aluno(string Nome, int Idade)
-    {
-        this.Nome = Nome;
-        this.Idade = Idade;
-        Matricula = "gerar";
+    public Aluno(string Nome, int Idade, float Peso) : this(Nome, Idade, Peso, 0){
     }
-
-    public Aluno(string Nome)
-    {
-        this.Nome = Nome;
-        Matricula = "gerar";
+    public Aluno(string Nome, int Idade) : this(Nome, Idade, 0){
     }
 }

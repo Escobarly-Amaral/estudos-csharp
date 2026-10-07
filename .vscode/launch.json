@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Projeto - SysAcademia",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/projetos/05_SistemaDeAcademia/bin/Debug/net10.0/05_SistemaDeAcademia.dll",
+            "cwd": "${workspaceFolder}/projetos/05_SistemaDeAcademia"
+        }
+    ]
+}

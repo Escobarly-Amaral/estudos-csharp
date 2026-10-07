@@ -6,4 +6,5 @@ internal class Treino
     public int Series {get;set;}
     public float Carga {get;set;}
     public static float CalcularCargaTotal(int repetiçoes, float carga) => (float) repetiçoes * carga;
+    
 }
