@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-sysacademia",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/projetos/05_SistemaDeAcademia"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
